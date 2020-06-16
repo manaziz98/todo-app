@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Piedra&family=Ubuntu:wght@300&display=swap");
+.list {
+  font-family: "Ubuntu", sans-serif;
+  width: 500px;
+  max-height: 88vh;
+  padding: 12px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: outset lightgray;
+  border-radius: 20px;
+}
+
+.bs-bottomRight-dark {
+  box-shadow: 10px 15px 10px rgb(20, 11, 11);
+}
+
+.bg-blueToGreen {
+  background: linear-gradient(to right, sienna 0%, peru 50%, wheat 100%);
+}
+
+.todos-container {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.input {
+  width: 90%;
+  height: 90%;
+  color: darkblue;
+  border: 0;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title {
+  text-transform: capitalize;
+  font-family: "Architects Daughter", cursive;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.add-button {
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+  margin-left: 4px;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 6px rgb(0, 0, 0, 1);
+}

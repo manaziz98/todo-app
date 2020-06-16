@@ -1,0 +1,85 @@
+.todo {
+  font-weight: bold;
+  width: 90%;
+  height: 50px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 2px outset lightgray;
+  box-shadow: 18px 12px 8px rgb(20, 11, 11);
+  border-radius: 10px;
+  animation: add 0.3s forwards 0s ease-in-out;
+}
+
+.todos,
+.dones {
+  height: 60%;
+  overflow: auto;
+  font-size: 16px;
+  font-weight: unset;
+  margin-top: 24px;
+  width: 80%;
+}
+.dones {
+  text-decoration: line-through;
+  color: #5db521;
+}
+.delete-button,
+.check-button {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: none;
+}
+
+.check-button {
+  background-image: url("../images/check.png");
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+}
+.delete-button {
+  background-image: url("../images/trash.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority-rank-dones {
+  color: #5db521;
+  margin-right: auto;
+}
+.priority-rank-todos {
+  margin-right: auto;
+}
+
+@keyframes add {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes delete {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
