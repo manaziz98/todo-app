@@ -66,6 +66,7 @@
   margin-right: auto;
 }
 
+/* animation */
 @keyframes add {
   0% {
     transform: scale(0);
